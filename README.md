@@ -1,2 +1,7 @@
-# effective-java-3e-notes
-Notes from a daily reading of Effective Java, 3rd Edition in 2022.  
+# Effective Java, 3rd Edition -- Notes
+
+This repo contains my notes from a read through of [_Effective Java, 3rd Edition_](https://www.pearson.com/us/higher-education/program/Bloch-Effective-Java-3rd-Edition/PGM1763855.html?) in 2022. 
+
+
+## Resources:
+- [Oracle Interview: "More Effective Java With Google's Joshua Bloch"](https://www.oracle.com/technical-resources/articles/javase/bloch-effective-08-qa.html)
