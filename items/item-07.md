@@ -60,3 +60,9 @@ public Object pop() {
   - Resolve this by storying only "weak references" to them.
 
 **Question:** What is a "weak reference"? See supported doc (TBD)
+
+## Navigation
+
+- [All Items](../README.md#items)
+- [Previous](item-06.md)
+- [Next](item-08.md)

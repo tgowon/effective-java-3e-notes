@@ -55,3 +55,9 @@ public class SpellChecker {
 In addition, you can also pass in a factory to the constructor; or, since JDK8, a `Supplier<T>` interface.
 
 Just know that once you start implementing your own manual dependency injection, things can start to get cluttered. The suggestion is to use a true Dependency Injection Framework; but I think we’re well aware of the pros and cons of that as well.
+
+## Navigation
+
+- [All Items](../README.md#items)
+- [Previous](item-04.md)
+- [Next](item-06.md)

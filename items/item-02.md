@@ -9,3 +9,9 @@ Why this is useful:
 > A minor advantage of builders over constructors is that builders can have multiple varargs parameters because each parameter is specified in its own method.  
 > …
 > [T]he Builder pattern is a good choice when designing classes who constructors or static factories would have more than a handful of [optional] parameters.
+
+## Navigation
+
+- [All Items](../README.md#items)
+- [Previous](item-01.md)
+- [Next](item-03.md)

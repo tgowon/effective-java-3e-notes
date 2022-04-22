@@ -148,3 +148,9 @@ class Teenager{
     }  
 }
 ```
+
+## Navigation
+
+- [All Items](../README.md#items)
+- [Previous](item-07.md)
+- [Next](item-09.md)

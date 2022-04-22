@@ -30,3 +30,9 @@ Lazy-initializing classes
 Pro-Tip on Pattern Matching: When Pattern Matching in Java (i.e. using a `Pattern` instance); prefer to initialize the instance as a part of class initialization (i.e. as a `static final` instance on the class), cache it, and reuse the same instance for every invocation on a given method. This is because pattern matching is not suitable for repeated use in performance-critical situations.
 
 When you create a `Pattern` / regular expression locally that is used in a method, internally the system creates a  `Pattern`  instance, uses it once, and then marks it eligible for garbage collection. Creating `Pattern` instances is expensive because it requires compiling the regular expression into a finite state machine. If instead you initialized the `Pattern` at the class level (via a `static final` field), you instead create this finite state machine only one time, and use it across multiple method invocations.
+
+## Navigation
+
+- [All Items](../README.md#items)
+- [Previous](item-05.md)
+- [Next](item-07.md)

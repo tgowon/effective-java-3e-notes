@@ -45,3 +45,8 @@ public class MyServiceFactory {
 > With this code, your library doesn’t need to know about the implementations of the service. Users of your library would have to set a system property containing the name of the implementation they want to use.
 
 > This is what is meant by the sentence you don’t understand: the factory method will return an instance of some class (which name is stored in the system property "MyServiceImplementation"), but it has absolutely no idea what class it is. All it knows is that it implements MyService and that it must have a public, no-arg constructor (otherwise, the factory above will throw an Error).
+
+## Navigation
+
+- [All Items](../README.md#items)
+- [Next](item-02.md)

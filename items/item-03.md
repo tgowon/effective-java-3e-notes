@@ -18,3 +18,9 @@ Bloch also writes about when the static factory approach for Singletons are usef
    1. For example, your SFM can start creating new instances per thread rather than always returning the same instance. From the API client’s perspective there is no contract change.
 2. SFMs can be used for a Generic Singleton Factory — but I have no idea what that is yet (that’s Item 30).
 3. SFMs can be used as suppliers in method references (e.g. `Foo::instance` is a `Supplier<Foo>`)
+
+## Navigation
+
+- [All Items](../README.md#items)
+- [Previous](item-02.md)
+- [Next](item-04.md)

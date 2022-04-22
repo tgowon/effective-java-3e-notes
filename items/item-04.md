@@ -29,3 +29,9 @@ public class UtilityClass {
 
 - Note: this prevents the class from being subclassed.
 - All constructors must invoke a superclass constructor, explicitly or implicitly; therefore a subclass would have no accessible superclass constructor to invoke.
+
+## Navigation
+
+- [All Items](../README.md#items)
+- [Previous](item-03.md)
+- [Next](item-05.md)
