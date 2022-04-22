@@ -40,7 +40,8 @@ This repo contains my notes from a read through of [_Effective Java, 3rd Edition
 - Item 24: Favor static member classes over nonstatic
 - Item 25: Limit source files to a single top-level class
 
-- Chapter 5: Generics
+### Generics
+
 - Item 26: Don’t use raw types
 - Item 27: Eliminate unchecked warnings
 - Item 28: Prefer lists to arrays
@@ -50,7 +51,8 @@ This repo contains my notes from a read through of [_Effective Java, 3rd Edition
 - Item 32: Combine generics and varargs judiciously
 - Item 33: Consider typesafe heterogeneous containers
 
-- Chapter 6: Enums and Annotations
+### Enums and Annotations
+
 - Item 34: Use enums instead of int constants
 - Item 35: Use instance fields instead of ordinals
 - Item 36: Use EnumSet instead of bit fields
@@ -60,7 +62,8 @@ This repo contains my notes from a read through of [_Effective Java, 3rd Edition
 - Item 40: Consistently use the Override annotation
 - Item 41: Use marker interfaces to define types
 
-- Chapter 7: Lambdas and Streams
+### Lambdas and Streams
+
 - Item 42: Prefer lambdas to anonymous classes
 - Item 43: Prefer method references to lambdas
 - Item 44: Favor the use of standard functional interfaces
@@ -118,7 +121,7 @@ This repo contains my notes from a read through of [_Effective Java, 3rd Edition
 - Item 83: Use lazy initialization judiciously
 - Item 84: Don’t depend on the thread scheduler
 
-### Chapter 12: Serialization
+### Serialization
 
 - Item 85: Prefer alternatives to Java serialization
 - Item 86: Implement Serializable with great caution
