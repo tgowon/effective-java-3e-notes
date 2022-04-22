@@ -4,6 +4,8 @@ This repo contains my notes from a read through of [_Effective Java, 3rd Edition
 
 :warning: **This is a still a work in progress**! - Read at your own risk! :warning:
 
+I'm currently reading an item a (work) day. 
+
 ## Items
 
 ### Creating and Destroying Objects
