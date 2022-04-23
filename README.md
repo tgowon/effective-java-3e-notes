@@ -1,4 +1,4 @@
-# Effective Java, 3rd Edition -- Notes
+# Effective Java, 3rd Edition - Notes
 
 This repo contains my notes from a read through of [_Effective Java, 3rd Edition_](https://www.pearson.com/us/higher-education/program/Bloch-Effective-Java-3rd-Edition/PGM1763855.html?) in 2022. 
 
