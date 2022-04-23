@@ -1,32 +1,34 @@
 # Item 8: Avoid finalizers and cleaners
 
-**Main Takeaway:**
+## Main Takeaway:
+
 > Don't use cleaners, or in releases prior to JDK 9, finalizers, except as a safety net or to terminate noncritical native resources. Even then, beware the indeterminacy and performance consequences.
 
 - Finalizers are unpredictable, often dangerous, and generally unnecessary.
 - Cleaners are less dangerous than finalizers, but still unpredictable, slow, and generally unnecessary.
 - As a consequence, you should **never depend of a finalizer or cleaner to update persistent state.**
 
-**What is a finalizer?**
-It is a **method** that the GC always calls just **before** the deletion/destroying the object which is eligible for Garbage Collection. Once the finalize method completes, the GC immediately destroys that object.
+## What is a finalizer?
+It is a **method** that the GC always calls just **before** the destroying an object. Once the `finalize` method completes, the GC immediately destroys that object.
 
-`finalize`  in on the `Object` class, with the following syntax:
+### `finalize` syntax:
 
 ```java
-
+//Object.java
 protected void finalize throws Throwable{} //it's empty
 ```
 
-**A finalizer is not a (C++) destructor**
-**The JVM's GC calls the finalizer** when it needs to reclaim storage associated with an object once it becomes unreachable. It's not expected that a program calls finalizers for its classes no longer in use.
+## A finalizer is not a (C++) destructor
+- **The JVM's GC calls the finalizer** when it needs to reclaim storage associated with an object once it becomes unreachable. 
+- It's not expected that a program calls finalizers for its classes no longer in use.
 
 In Java, to reclaim non-memory resources, using `try-with-resources` or `try-finally` blocks are normally used, and STRONGLY preferred.
 
-**What about a Cleaner?**
+## What about a Cleaner?
 
-In **Java 9**, the `finalize()` method was  **deprecated** and a new class **java.lang.ref.Cleaner** added to garbage collection management. An object of **Cleaner** class gets notified automatically when an object becomes eligible for garbage collection. An object that is being garbage collected needs to be **registered with the cleaner object** by using the **register()** method.
+In **Java 9**, the `finalize()` method was  **deprecated** and a new **java.lang.ref.Cleaner** class was added to supporrt garbage collection management. An object of **Cleaner** class gets notified automatically when an object becomes eligible for garbage collection. An object that is being garbage collected needs to be **registered with the cleaner object** by using the **register()** method.
 
-**For Example:**
+### For Example:
 
 ```java
 import java.lang.ref.Cleaner;
@@ -55,9 +57,9 @@ public class CleanerTest {
 }
 ```
 
-**Why Finalizers are Cleaners are best to be avoided:**
+## Why Finalizers are Cleaners are best to be avoided:
 
-- GC decides when finalizers/cleaners (in general) are run.
+- GC decides when finalizers/cleaners are run.
   - **Major Takeaway:** Never do anything time-critical in a finalizer or a cleaner.
     - The promptness with which finalizers and cleaners are executed is primarily a function of the garbage collection algorithm, which varies widely across implementation.
 - Exceptions can be hard to find
@@ -71,19 +73,19 @@ public class CleanerTest {
     - There is no guarantee that the'll run at all. It is entirely possibly, even likely, that a program terminates without running them on some objects that are no longer reachable.
 - There is severe performance penalty for using finalizers and cleaners.
 
-**Legitimate Reasons to use finalizers and cleaners**
+## Legitimate Reasons to use finalizers and cleaners
 
 - To act as a safety net in case the owner of a resource neglects to call its `close` method (assuming the resource implements `Closeable`/`AutoCloseable`).
 - It manage resources with native peers.
   - A "native peer" is a native (non-Java) object to which a normal object delegates via native methods.
   - Because a native peer is not a normal object, the garbage collector doesn't know about it and can't reclaim it when its Java peer is reclaimed. This is where finalizer/cleaners come in handy.
 
-**What should you do instead of using finalizers / cleaners?**
+## What should you do instead of using finalizers / cleaners?
 > Just have your class implement AutoCloseable, and require its clients to invoke the close method on each instance when it is no longer needed, typically using `try-with-resources` to ensure termination even in the face of exceptions (Item 9).
 >
 > One detail worth mentioning is that the instance must keep track of whether it has been closed: the `close` method must record in a field that the object is no longer valid, and other methods must check this field and throw an `IllegalStateException` if they are called after the object has been closed.
 
-**An example of a Cleaner / AutoCloseable in Action**
+## An example of a Cleaner / AutoCloseable in Action
 
 ```java
 import java.lang.ref.Cleaner;  
@@ -127,7 +129,7 @@ public class Room  implements AutoCloseable{
 
 ```
 
-**Called from Client Code**
+### Called from Client Code
 
 ```java
 //Cleaner called by AutoCloseable
