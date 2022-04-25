@@ -22,7 +22,7 @@ Bloch also lists several naming conventions for SFMs that I can see in quite a f
 
 ### Service Provider Frameworks
 
-(Taken from Stackoverflow)
+(Answer taken from [Stackoverflow](https://stackoverflow.com/a/11823924))
 
 > Consider something like the following:
 
