@@ -1,10 +1,12 @@
 # Item 5: Prefer dependency injection to hardwiring resources
 
+## Main Takeaway
+
 > Do not use a singleton or static utility class to implement a class that depends on one or more underlying resources whose behavior affects that of the class, and do not have the class create these resources directly. Instead, pass the resources, or factories to create them, into the constructor (or static factory or builder). This practice, known as **dependency injection**, will greatly enhance the flexibility, reusability, and testability of the class.
 
 According to Effective Java, here are some bad times --
 
-**Inappropriate use of static utility:**  
+### Inappropriate use of static utility (Example)
 
 ```java
 //Inappropriate use of static utility - inflexible & untestable
@@ -18,7 +20,7 @@ public class SpellChecker {
 }
 ```
 
-**Inappropriate use of singleton:**  
+### Inappropriate use of singleton (Example)
 
 ```java
 //Inappropriate use of singleton - inflexible & untestable
@@ -36,7 +38,7 @@ public class SpellChecker {
 
 > :information_source: Side note:  While I think I'm used to hearing “Dependency Injection” and thinking about Spring (or Guice, etc.), in reality, dependency injection can simply be a constructor param pass-through:
 
-**Dependency Injection provides flexibility and testability:**  
+### Dependency Injection provides flexibility and testability
 
 ```java
 //Dependency Injection provides flexibility and testability 

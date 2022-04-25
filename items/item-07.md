@@ -1,6 +1,10 @@
 # Item 7: Eliminate Obsolete Object References
 
+## Main Takeaway
+
 An obsolete reference is a reference that will never be dereferenced again. If an object reference is unintentionally retained (i.e. becomes "obsolete" from the perspective of the program), not only is that object excluded from garbage collection, but  any objects referenced by that object (and their own references, etc.) are also excluded from GC.  
+
+## Example - Idsidious Obsolete References from a simple Stack
 
 In the example below, the Stack class has a memory leak because if the stack grows and then shrinks, the objects that were popped off the stack will not be garbage collected, even if the program using the stack has no more references to them. In this case, the "obsolete references" are any elements that are outside the "active portion" of the stack array (i.e. any elements that have an index greater than `size`).
 
@@ -47,11 +51,13 @@ public Object pop() {
 }
 ```
 
-**Nulling out object references should be the exception rather than the norm.** The best way to eliminate an obsolete reference is to let the variable fall out of scope (which happens naturally if you define each variable in its narrowest possible scope [Item 57]).
+### Nulling out object references should be the exception rather than the norm
+
+The best way to eliminate an obsolete reference is to let the variable fall out of scope (which happens naturally if you define each variable in its narrowest possible scope [Item 57]).
 
 **In general:** whenever a class manages its own memory, you should be alert for memory leaks, and identify whenever references should be nulled out when no longer in use.
 
-**Other instances for common memory leaks:**
+### Other instances for common memory leaks
 
 - caches -- it's easy to forget that an item is in a cache, and leave it in the cache long after it becomes irrelevant.
   - You can resolve this by using a `WeakHashMap`, which automatically removes entries when they become obsolete.

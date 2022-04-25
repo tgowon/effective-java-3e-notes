@@ -4,7 +4,7 @@ This repo contains my notes from a read through of [_Effective Java, 3rd Edition
 
 :warning: **This is a still a work in progress**! - Read at your own risk! :warning:
 
-I'm currently reading an item a (work) day. 
+I'm currently reading an item a (work) day.
 
 ## Items
 
@@ -16,17 +16,17 @@ I'm currently reading an item a (work) day.
 - [Item 4: Enforce noninstantiability with a private constructor](items/item-04.md)
 - [Item 5: Prefer dependency injection to hardwiring resources](items/item-05.md)
 - [Item 6: Avoid creating unnecessary objects](items/item-06.md)
-- [Item 7: Eliminate obsolete object references ](items/item-07.md)
+- [Item 7: Eliminate obsolete object references](items/item-07.md)
 - [Item 8: Avoid finalizers and cleaners](items/item-08.md)
 - [Item 9: Prefer try-with-resources to try-finally](items/item-09.md)
 
 ### Methods Common to All Objects
 
-- Item 10: Obey the general contract when overriding equals 
-- Item 11: Always override hashCode when you override equals 
-- Item 12: Always override toString 
-- Item 13: Override clone judiciously 
-- Item 14: Consider implementing Comparable 
+- Item 10: Obey the general contract when overriding equals
+- Item 11: Always override hashCode when you override equals
+- Item 12: Always override toString
+- Item 13: Override clone judiciously
+- Item 14: Consider implementing Comparable
 
 ### Classes and Interfaces
 

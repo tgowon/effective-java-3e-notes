@@ -1,8 +1,10 @@
 # Item 3: Enforce the singleton property with a private constructor or an enum type
 
-Main takeaway:  
+## Main takeaway  
 
 > The single-element enum type is often the best way to implement a singleton.
+
+## Rationale
 
 This is because a single-element enum provides the following advantages:  
 
