@@ -2,11 +2,11 @@
 
 ## Main Takeaway
 
-> Override `Object`s `toString` implementation in every instantiable class you write, unless a superclass has already done so. It makes classes much more pleasant to use and aids in debugging. The `toString` method should return a concise, useful desription of the object, in an aesthentically pleasing format. 
+> Override `Object`s `toString` implementation in every instantiable class you write, unless a superclass has already done so. It makes classes much more pleasant to use and aids in debugging. The `toString` method should return a concise, useful description of the object, in an aesthetically pleasing format.
 
 ## Rationale
 
-Providing a good `toString` implementation makes your class much more pleasnt to use and makes systems using the class easier to debug.
+Providing a good `toString` implementation makes your class much more pleasant to use and makes systems using the class easier to debug.
 
 ## Pro-Tips: Designing a good `toString` method
 
@@ -54,19 +54,19 @@ Modern IDEs, as well as Google's AutValue framework can generate a decent `toStr
 
 ### Advantages
 
-> The advantage of specifying the format is that it serves as a standard, unambiguous, human readable representation of teh object. This representation can be used for input and output and in persistent human-readable data objects (e.g. CSV, JSON, etc.). 
+> The advantage of specifying the format is that it serves as a standard, unambiguous, human readable representation of teh object. This representation can be used for input and output and in persistent human-readable data objects (e.g. CSV, JSON, etc.).
 
 #### Pro-Tip: Construct instances from `toString` values
 
-> If you specify the format, it's usually a good idea to provide a mathcing static factory or constructor so programmers can easily translate back and forth between the object and its string representation.
+> If you specify the format, it's usually a good idea to provide a matching static factory or constructor so programmers can easily translate back and forth between the object and its string representation.
 
 ### Disadvantages
 
-> The disadvantage of specifying the format of the `toString` return value is that once you've specified it, you're stuck with it for life, assuming your calss is widely used.
+> The disadvantage of specifying the format of the `toString` return value is that once you've specified it, you're stuck with it for life, assuming your class is widely used.
 
 ### Takeaway
 
-> Whether or not you decide to specify the format, you should clearly docuement your changes.
+> Whether or not you decide to specify the format, you should clearly document your changes.
 
 Either document _precisely_ what format the class will use, or state that the representation is subject to change. eg.
 

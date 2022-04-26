@@ -36,7 +36,7 @@ You can add a value component to a sublcass of an _abstract_ class without viola
 
 ### Consistent
 
->For any non-null reference values, `x` and `y`, multiple invocations of `x.equals(y)` must consistently return `true` or consistently return `false`, provided no information used in `equals` comparisons is modified. 
+>For any non-null reference values, `x` and `y`, multiple invocations of `x.equals(y)` must consistently return `true` or consistently return `false`, provided no information used in `equals` comparisons is modified.
 
 Do not write an `equals` method that depends on unreliable resources. ... To avoid this sort of problem, `equals` should only perform on deterministic computations on memory-resident objects.
 
@@ -79,11 +79,10 @@ Keep it simple, and adhere to the [Equivalence Relations](#what-is-an-equivalenc
 
 Pp. 47-48 in _Effective Java_ provide a recipe for building an efficient `equals` method. The following is a brief overview.
 
-1. Use the `==` operator to check if the argument is a referrence to `this` object.
+1. Use the `==` operator to check if the argument is a reference to `this` object.
 2. Use the `instanceof` operator to check if the argument has the correct type.
 3. Cast the argument to the correct type
 4. For each "significant" field in the class, check if that field of the argument matches the corresponding field of `this` object.
-
 
 You can also find efficient open-source algorithms on the Internet.
 

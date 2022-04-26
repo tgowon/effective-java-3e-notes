@@ -10,7 +10,7 @@ Values return from `hashCode` must satisfy the following criteria:
 
 1. **When the `hashCode` method is invoked on an object repeatedly during an execution of an application, it must consistently return the same value, provide no information used in the `equals` comparisons is modified.** This value ned to remain consistent from one execution of an application to another.
 2. **If two objects are equal according to the `equals(Object)` method, then calling `hashCode` on the two objects must product the same integer result.**
-3.  **If two objects are unequal according to the `equals(Object)` method, it is _not_ required that calling the hashCode on each of the objects must product distinct results.** However, the programmer should be aware that producing distinct results for unequal objects my improve the performance of hash tables.
+3. **If two objects are unequal according to the `equals(Object)` method, it is _not_ required that calling the hashCode on each of the objects must product distinct results.** However, the programmer should be aware that producing distinct results for unequal objects my improve the performance of hash tables.
 
 Since equal objects must have equal hash codes, overriding `equals` requires overriding `hashCode` for the methods to remain consistent and in compliance.
 
@@ -88,7 +88,6 @@ Pp. 51-51 in _Effective Java_ provide a recipe that is very similar to the imple
 
 - Exclude any fields that are not used in `equals` comparisons, or your risk violating the second provision of the hashCode contract
 - Do not be tempted to exclude significant fields from the hashCode computation to improve performance.
-
 
 ## Navigation
 
