@@ -1,6 +1,6 @@
 # Effective Java, 3rd Edition - Notes
 
-This repo contains my notes from a read through of [_Effective Java, 3rd Edition_](https://www.pearson.com/us/higher-education/program/Bloch-Effective-Java-3rd-Edition/PGM1763855.html?) in 2022. 
+This repo contains my notes from a read through of [_Effective Java, 3rd Edition_](https://www.pearson.com/us/higher-education/program/Bloch-Effective-Java-3rd-Edition/PGM1763855.html?) in 2022.
 
 :warning: **This is a still a work in progress**! - Read at your own risk! :warning:
 
@@ -22,9 +22,9 @@ I'm currently reading an item a (work) day.
 
 ### Methods Common to All Objects
 
-- Item 10: Obey the general contract when overriding equals
-- Item 11: Always override hashCode when you override equals
-- Item 12: Always override toString
+- [Item 10: Obey the general contract when overriding equals](items/item-10.md)
+- [Item 11: Always override hashCode when you override equals](items/item-11.md)
+- [Item 12: Always override toString](items/item-12.md)
 - Item 13: Override clone judiciously
 - Item 14: Consider implementing Comparable
 
