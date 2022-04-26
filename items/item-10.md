@@ -16,7 +16,7 @@ The `equals` method implements an _equivalence relation._
 
 ### Reflexive
 
-> For any non-null reference value `x`, `x.equals(x)` must return `true.
+> For any non-null reference value `x`, `x.equals(x)` must return `true`.
 
 If you were to violate this property and then add an instance of your class to a collection, the `contains` method might well say that the collections didn't contain the instance that you just added.
 
