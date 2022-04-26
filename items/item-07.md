@@ -4,7 +4,7 @@
 
 An obsolete reference is a reference that will never be dereferenced again. If an object reference is unintentionally retained (i.e. becomes "obsolete" from the perspective of the program), not only is that object excluded from garbage collection, but  any objects referenced by that object (and their own references, etc.) are also excluded from GC.  
 
-## Example - Idsidious Obsolete References from a simple Stack
+## Example - Insidious Obsolete References from a simple Stack
 
 In the example below, the Stack class has a memory leak because if the stack grows and then shrinks, the objects that were popped off the stack will not be garbage collected, even if the program using the stack has no more references to them. In this case, the "obsolete references" are any elements that are outside the "active portion" of the stack array (i.e. any elements that have an index greater than `size`).
 
