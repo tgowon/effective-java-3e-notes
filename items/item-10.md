@@ -24,13 +24,13 @@ If you were to violate this property and then add an instance of your class to a
 
 > For any non-null reference values `x` and `y`, `x.equals(y)` must return `true` if and only if `y.equals(x)` returns `true`.
 
-Once you've violated the `equals` contract (with respect to symmetry), you simply don't know how other objects will behave when confronted with your object. (**FIX_ME**)
+Once you've violated the `equals` contract (with respect to symmetry), you simply don't know how other objects will behave when confronted with your object.
 
 ### Transitive
 
 > For non-null reference values `x`, `y`,`z`, if `x.equals(y)` returns `true` and `y.equals(z)` returns `true`, then `x.equals(z)` must return true.
 
-There is no way to extend an instantiable class and add a value component while presenving the `equals` contract. **FIX_ME**
+There is no way to extend an instantiable class and add a value component while presenving the `equals` contract.
 
 You can add a value component to a sublcass of an _abstract_ class without violating the `equals` contract. Problems of the sort shown earlier won't occur so long as it is impossible to create a superclass instance directly.
 
