@@ -46,7 +46,7 @@ Do not write an `equals` method that depends on unreliable resources. ... To avo
 
 Your `equals` method should return `false` on null not `NullPointerException`.
 
-Note: the `instanceof` operator does an implicit `null` check, so you don't have to do an explict `null` check in your `equals` method.
+Note: the `instanceof` operator does an implicit `null` check, so you don't have to do an explicit `null` check in your `equals` method.
 
 ## Pro-Tips: Designing a good `equals` method
 

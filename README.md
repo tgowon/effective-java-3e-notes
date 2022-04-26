@@ -24,7 +24,7 @@ I'm currently reading an item a (work) day.
 
 - [Item 10: Obey the general contract when overriding `equals`](items/item-10.md)
 - [Item 11: Always override `hashCode` when you override `equals`](items/item-11.md)
-- [Item 12: Always override toString](items/item-12.md)
+- [Item 12: Always override `toString`](items/item-12.md)
 - Item 13: Override clone judiciously
 - Item 14: Consider implementing Comparable
 
