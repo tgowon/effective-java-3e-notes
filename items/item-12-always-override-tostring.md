@@ -82,5 +82,5 @@ Either document _precisely_ what format the class will use, or state that the re
 ## Navigation
 
 - [All Items](../README.md#items)
-- [Previous](item-11.md)
-- [Next](item-13.md)
+- [Previous](./item-11-always-override-hashcode-when-you-override-equals.md)
+- [Next](./item-13-override-clone-judiciously.md)

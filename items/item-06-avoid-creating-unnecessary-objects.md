@@ -37,5 +37,5 @@ When you create a `Pattern` / regular expression locally that is used in a metho
 ## Navigation
 
 - [All Items](../README.md#items)
-- [Previous](item-05.md)
-- [Next](item-07.md)
+- [Previous](./item-05-prefer-depdendency-injection-to-hardwiring-resources.md)
+- [Next](./item-07-eliminate-obsolete-object-references.md)

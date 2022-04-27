@@ -104,5 +104,5 @@ Copy Constructors/Factories (like the example above) with single-interface argum
 ## Navigation
 
 - [All Items](../README.md#items)
-- [Previous](item-12.md)
-- [Next](item-14.md)
+- [Previous](./item-12-always-override-tostring.md)
+- [Next]()

@@ -10,22 +10,22 @@ I'm currently reading an item a (work) day.
 
 ### Creating and Destroying Objects
 
-- [Item 1: Consider static factory methods instead of constructors](items/item-01.md)
-- [Item 2: Consider a builder when faced with many constructor parameters](items/item-02.md)
-- [Item 3: Enforce the singleton property with a private constructor or an enum type](items/item-03.md)
-- [Item 4: Enforce noninstantiability with a private constructor](items/item-04.md)
-- [Item 5: Prefer dependency injection to hardwiring resources](items/item-05.md)
-- [Item 6: Avoid creating unnecessary objects](items/item-06.md)
-- [Item 7: Eliminate obsolete object references](items/item-07.md)
-- [Item 8: Avoid finalizers and cleaners](items/item-08.md)
-- [Item 9: Prefer try-with-resources to try-finally](items/item-09.md)
+- [Item 1: Consider static factory methods instead of constructors](items/item-01-consider-static-factory-methods-instead-of-constructors.md)
+- [Item 2: Consider a builder when faced with many constructor parameters](items/item-02-consider-a-builder-when-faced-with-many-constructors.md)
+- [Item 3: Enforce the singleton property with a private constructor or an enum type](items/item-03-enforce-the-singleton-property-with-a-private-constructor-or-an-enum-type.md)
+- [Item 4: Enforce noninstantiability with a private constructor](items/item-04-enforce-non-instantiability-with-a-private-constructor.md)
+- [Item 5: Prefer dependency injection to hardwiring resources](items/item-05-prefer-depdendency-injection-to-hardwiring-resources.md)
+- [Item 6: Avoid creating unnecessary objects](items/item-06-avoid-creating-unnecessary-objects.md)
+- [Item 7: Eliminate obsolete object references](items/item-07-eliminate-obsolete-object-references.md)
+- [Item 8: Avoid finalizers and cleaners](items/item-08-avoid-finalizers-and-cleaners.md)
+- [Item 9: Prefer try-with-resources to try-finally](items/item-09-prefer-try-with-resources-to-try-finally.md)
 
 ### Methods Common to All Objects
 
-- [Item 10: Obey the general contract when overriding `equals`](items/item-10.md)
-- [Item 11: Always override `hashCode` when you override `equals`](items/item-11.md)
-- [Item 12: Always override `toString`](items/item-12.md)
-- [Item 13: Override clone judiciously](items/item-13.md)
+- [Item 10: Obey the general contract when overriding `equals`](items/item-10-obey-the-general-contract-when-overriding-equals.md)
+- [Item 11: Always override `hashCode` when you override `equals`](items/item-11-always-override-hashcode-when-you-override-equals.md)
+- [Item 12: Always override `toString`](items/item-12-always-override-tostring.md)
+- [Item 13: Override clone judiciously](items/item-13-override-clone-judiciously.md)
 - Item 14: Consider implementing Comparable
 
 ### Classes and Interfaces

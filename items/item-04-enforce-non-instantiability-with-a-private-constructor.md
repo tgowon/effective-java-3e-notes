@@ -35,5 +35,5 @@ public class UtilityClass {
 ## Navigation
 
 - [All Items](../README.md#items)
-- [Previous](item-03.md)
-- [Next](item-05.md)
+- [Previous](./item-03-enforce-the-singleton-property-with-a-private-constructor-or-an-enum-type.md)
+- [Next](./item-05-prefer-depdendency-injection-to-hardwiring-resources.md)

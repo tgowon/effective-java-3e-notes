@@ -70,5 +70,5 @@ The best way to eliminate an obsolete reference is to let the variable fall out 
 ## Navigation
 
 - [All Items](../README.md#items)
-- [Previous](item-06.md)
-- [Next](item-08.md)
+- [Previous](./item-06-avoid-creating-unnecessary-objects.md)
+- [Next](./item-08-avoid-finalizers-and-cleaners.md)

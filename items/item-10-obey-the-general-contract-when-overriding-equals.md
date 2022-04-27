@@ -93,5 +93,5 @@ Modern IDEs, as well as Google's AutValue framework can generate a decent `equal
 ## Navigation
 
 - [All Items](../README.md#items)
-- [Previous](item-09.md)
-- [Next](item-11.md)
+- [Previous](./item-09-prefer-try-with-resources-to-try-finally.md)
+- [Next](./item-11-always-override-hashcode-when-you-override-equals.md)

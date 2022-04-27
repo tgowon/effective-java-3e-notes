@@ -61,5 +61,5 @@ Just know that once you start implementing your own manual dependency injection,
 ## Navigation
 
 - [All Items](../README.md#items)
-- [Previous](item-04.md)
-- [Next](item-06.md)
+- [Previous](./item-04-enforce-non-instantiability-with-a-private-constructor.md)
+- [Next](./item-06-avoid-creating-unnecessary-objects.md)

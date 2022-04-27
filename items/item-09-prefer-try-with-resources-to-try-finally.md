@@ -85,5 +85,5 @@ static void copy(String src, String dst) throws IOException{
 ## Navigation
 
 - [All Items](../README.md#items)
-- [Previous](item-08.md)
-- [Next](item-10.md)
+- [Previous](./item-08-avoid-finalizers-and-cleaners.md)
+- [Next](./item-10-obey-the-general-contract-when-overriding-equals.md)

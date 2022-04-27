@@ -28,5 +28,5 @@ The process is similar to using StringBuilder.
 ## Navigation
 
 - [All Items](../README.md#items)
-- [Previous](item-01.md)
-- [Next](item-03.md)
+- [Previous](./item-01-consider-static-factory-methods-instead-of-constructors.md)
+- [Next](./item-03-enforce-the-singleton-property-with-a-private-constructor-or-an-enum-type.md)

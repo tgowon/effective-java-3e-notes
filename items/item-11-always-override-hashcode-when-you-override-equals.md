@@ -92,5 +92,5 @@ Pp. 51-51 in _Effective Java_ provide a recipe that is very similar to the imple
 ## Navigation
 
 - [All Items](../README.md#items)
-- [Previous](item-10.md)
-- [Next](item-12.md)
+- [Previous](./item-11-always-override-hashcode-when-you-override-equals.md)
+- [Next](./item-12-always-override-tostring.md)

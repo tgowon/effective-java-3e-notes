@@ -24,5 +24,5 @@ Bloch also writes about when the static factory approach for Singletons are usef
 ## Navigation
 
 - [All Items](../README.md#items)
-- [Previous](item-02.md)
-- [Next](item-04.md)
+- [Previous](./item-03-enforce-the-singleton-property-with-a-private-constructor-or-an-enum-type.md)
+- [Next](./item-04-enforce-non-instantiability-with-a-private-constructor.md)

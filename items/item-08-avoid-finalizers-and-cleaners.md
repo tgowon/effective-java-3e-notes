@@ -157,5 +157,5 @@ class Teenager{
 ## Navigation
 
 - [All Items](../README.md#items)
-- [Previous](item-07.md)
-- [Next](item-09.md)
+- [Previous](./item-07-eliminate-obsolete-object-references.md)
+- [Next](./item-09-prefer-try-with-resources-to-try-finally.md)
