@@ -28,7 +28,7 @@ In Java, to reclaim non-memory resources, using `try-with-resources` or `try-fin
 
 ## What about a Cleaner?
 
-In **Java 9**, the `finalize()` method was  **deprecated** and a new **java.lang.ref.Cleaner** class was added to supporrt garbage collection management. An object of **Cleaner** class gets notified automatically when an object becomes eligible for garbage collection. An object that is being garbage collected needs to be **registered with the cleaner object** by using the **register()** method.
+In **Java 9**, the `finalize()` method was  **deprecated** and a new **java.lang.ref.Cleaner** class was added to support garbage collection management. An object of **Cleaner** class gets notified automatically when an object becomes eligible for garbage collection. An object that is being garbage collected needs to be **registered with the cleaner object** by using the **register()** method.
 
 ### Basic `Cleaner` Example
 

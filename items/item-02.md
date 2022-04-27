@@ -6,7 +6,7 @@
 
 ## What is a Builder?
 
-The Builder Pattern (in the context) is the process of calling a separate a "builder" object (or static factory method) with all of the required / optional parameters to generate an individual object, instead of making the desired object direclty. This allows for flexibility in object constrcution, while also allowing for the desired output object to be immutable.
+The Builder Pattern (in the context) is the process of calling a separate a "builder" object (or static factory method) with all of the required / optional parameters to generate an individual object, instead of making the desired object directly. This allows for flexibility in object construction, while also allowing for the desired output object to be immutable.
 
 ```java
 PersonBuilder builder = new PersonBuilder();
@@ -21,7 +21,7 @@ The process is similar to using StringBuilder.
 
 ## Why this is useful
 
-> A minor advantage of builders over constructors is that builders can have multiple varargs parameters because each parameter is specified in its own method.  
+> A minor advantage of builders over constructors is that builders can have multiple `varargs` parameters because each parameter is specified in its own method.  
 > …
 > [T]he Builder pattern is a good choice when designing classes who constructors or static factories would have more than a handful of [optional] parameters.
 

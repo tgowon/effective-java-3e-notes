@@ -6,7 +6,7 @@
 2. Unlike constructors, they are not required to create a new object each time they’re invoked.
 3. Unlike constructors, they can return an object of any subtype of their return type.
 4. The class of the returned object can vary from call to call as a function of the input parameters.
-5. The class of the retuned object need not exist when the class containing the method is written.
+5. The class of the returned object need not exist when the class containing the method is written.
 
 ## Disadvantages
 

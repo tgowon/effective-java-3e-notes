@@ -22,7 +22,7 @@ When practical, the `toString` method should return _all_ of the interesting inf
 
 ### Provide useful accessors
 
-Provide programmatic access to the infomration contained in the value returned by `toString`.
+Provide programmatic access to the information contained in the value returned by `toString`.
 
 - e.g. for `"[IceCream: flavor=vanilla, size=small, container=Waffle Cone]"`, the following accessors should also exist:
   - `getFlavor()`
@@ -31,11 +31,11 @@ Provide programmatic access to the infomration contained in the value returned b
 
 ### Don't make the user parse `toString()` to get useful info
 
-Do not include any data in the returned string that otherwise could not be acesssed programmatically.
+Do not include any data in the returned string that otherwise could not be accessed programmatically.
 
 - e.g. do not provide "toppings=sprinkles" if a `getToppings()` accessor does not exist.
 
-By failing to provide accessors, you turn the `toString` format into a de facto API, even if you've specifed that it's subject to change.
+By failing to provide accessors, you turn the `toString` format into a de facto API, even if you've specified that it's subject to change.
 
 ### Avoid writing `toString` methods on Static Utility classes and `Enum` classes
 

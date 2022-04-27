@@ -30,7 +30,7 @@ Once you've violated the `equals` contract (with respect to symmetry), you simpl
 
 > For non-null reference values `x`, `y`,`z`, if `x.equals(y)` returns `true` and `y.equals(z)` returns `true`, then `x.equals(z)` must return true.
 
-There is no way to extend an instantiable class and add a value component while presenving the `equals` contract.
+There is no way to extend an instantiable class and add a value component while preserving the `equals` contract.
 
 You can add a value component to a sublcass of an _abstract_ class without violating the `equals` contract. Problems of the sort shown earlier won't occur so long as it is impossible to create a superclass instance directly.
 
