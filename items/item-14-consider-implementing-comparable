@@ -2,9 +2,11 @@
 
 ## Main Takeaway
 
-> Whenever you implement a value class that has a sensible ordering, you should have the class implement the `Comparable` interface so that its instances can be easily sorted, searched, and used in comparison-based collections. When comparing field values in the implementations of teh `compareTo` methods, avoid the use of the `<` and `>` operators. Instead, use the static `compare` methods in teh boxed primitive classes or teh comparator construction methods in the `Comparator` interface.
+> Whenever you implement a value class that has a sensible ordering, you should have the class implement the `Comparable` interface so that its instances can be easily sorted, searched, and used in comparison-based collections. When comparing field values in the implementations of the `compareTo` methods, avoid the use of the `<` and `>` operators. Instead, use the static `compare` methods in the boxed primitive classes or the comparator construction methods in the `Comparator` interface.
 
-By implementing `Comparable` you allow your class to interoperate with all of the many generic algorithms and collection implementations that depend on this interface. You gain tremendous amount of power fo a small amount of effort. Virtually all of the value classes in the Java platform libraries, as well as teh enum types (Item 34) implement `Comparable`. If you are writing a value class with an obvious natural ordering, such as alphabetical order, numerical order, or chronological order, you should implement the `Comparable interface:
+By implementing `Comparable` you allow your class to interoperate with all of the many generic algorithms and collection implementations that depend on this interface.
+
+Virtually all of the value classes in the Java platform libraries, as well as the enum types (Item 34) implement `Comparable`. If you are writing a value class with an obvious natural ordering, such as alphabetical order, numerical order, or chronological order, you should implement the `Comparable interface:
 
 ```java
 public interface Comparable<T>{
@@ -12,20 +14,56 @@ public interface Comparable<T>{
 }
 ```
 
+## NOTES (WIP)
+
+Classes that depend on comparison include the sorted collections `TreeSet` and `TreeMap` and the utility classes `Collections` and `Arrays` which contain searching and sorting algorithms.
+
 ## `Comparable` - Contract Definition
 
->Compare this object with the specified object for order. Returns a negative integer, zero, or a positive integer as this object is less than, equal to, or greater than the specified object. Throws `ClassCastException` if the specified object's type prevents it from being compared to this object.
->
->In the following description, the notation `sgn(expression)` designates the mathematical `signum` function, which is defined to return -1, 0, or 1, according to whether the values of teh `expression` is negative, zero, or positive.
->
-> - The implementer must ensure that `sgn(x.compareTo(y)) == -sgn(y.compareTo(x))` for all `x` and `y`. (This implies that `x.compareTo(y)` must throw an exception if and off iff `y.compareTo(x))` throws and exception.
-> The implementor must also ensure that the relation is transitive: `(x.compareTo(y) > 0 && y.compareTo(z)>0)` implies `x.compareTo(z)>0`.
-> Finally, the implementer must ensure that `x.compareTo(y)==0` implies that `sgn(x.compareTo(z))==sgn(y.compareTo(z))`, for all `z`.
-> It is strongly recommended, but not required that `(x.compareTo(y)==0)==(x.equals(y))`. Generally speaking, any class that implements the `Comparable` interface and violates this condition should clearly indicate this fact. The recommended language is: "Note: This class has a natural ordering that is inconsistent with `equals`."
+>Returns a negative integer, zero, or a positive integer as this object is less than, equal to, or greater than the specified object. Throws `ClassCastException` if the specified object's type prevents it from being compared to this object.
+
+### Comparable Properties
+
+**Note:** the notation `sgn(expression)` designates the mathematical [`signum`](https://en.wikipedia.org/wiki/Sign_function) function, which is defined to return -1, 0, or 1, according to whether the values of the `expression` is negative, zero, or positive.
+
+#### Symmetry
+
+>The implementer must ensure that `sgn(x.compareTo(y)) == -sgn(y.compareTo(x))` for all `x` and `y`. (This implies that `x.compareTo(y)` must throw an exception if and off iff `y.compareTo(x))` throws and exception.
+
+#### Transitive
+
+>The implementor must also ensure that the relation is transitive: `(x.compareTo(y) > 0 && y.compareTo(z)>0)` implies `x.compareTo(z)>0`.
+
+#### Equivalence
+
+>Finally, the implementer must ensure that `x.compareTo(y)==0` implies that `sgn(x.compareTo(z))==sgn(y.compareTo(z))`, for all `z`.
+
+#### [Optional] Relation to `equals`
+
+>It is strongly recommended, but not required that `(x.compareTo(y)==0)==(x.equals(y))`. Generally speaking, any class that implements the `Comparable` interface and violates this condition should clearly indicate this fact. The recommended language is: "Note: This class has a natural ordering that is inconsistent with `equals`."
+
+## `compareTo` and `equals`
 
 Unlike the `equals` method, which imposes a global equivalence relation on all objects, `compareTo` doesn't have to work across objects of different types: when confronted with objects of different types, `compareTo` is permitted to throw `ClassCastException`. Usually, that's exactly what it does.
 
-Classes that depend on comparison include the sorted collections `TreeSet` and `TreeMap` and the utility classes `Collections` and `Arrays` which contain searching and sorting algorithms.
+Writing a `compareTo` method is similar to writing an `equals` method, but there are a few key differences. Because the `Comparable` interface is parameterized, the `compareTo` method is statically typed, so you don't need to type check or cast its argument. If the argument is of the wrong type, the invocation won't even compile. If the argument is `null`, the invocation should through a NullPointerException.
+
+Once consequence of these three provisions is that the equality test imposed by a `compareTo` method must obey the same restrictions imposed by the `equals` contract: reflexivity, symmetry, and transitivity. Therefore, the same caveat applies: there is no way to extend an instantiable class with a new value component while preserving the `compareTo` contract, unless you are willing to forgo the benefits of object-oriented abstraction (Item 10).
+
+The same workaround applies, too If you want to add a value component to a class that implements `Comparable`, don't extend it: write an unrelated class containing an instance of the first class. Then provided a "view" method that returns the contained instance.
+
+## Writing a good `compareTo` method
+
+To compare object reference fields, invoke the compareTo method recursively.
+If a field does not implement `Comparable` or you need nonstandard ordering, use a Comparator instead.
+
+With primitives, use use the static `compare` methods on all of Java's boxed primitive classes instead of relational operators `<` or `>`.
+
+If a class has multiple significant fields, start with the most significant field, and work your way down.
+
+If using the `Comparator` interface, be mindful that its advantage (the use of _comparator construction methods_, which enable a fluent interface) comes as a modest performance cost (for sorting arrays they generate).
+
+## What is a `Comparator`?
 
 ## Navigation
 

@@ -54,7 +54,7 @@ Modern IDEs, as well as Google's AutValue framework can generate a decent `toStr
 
 ### Advantages
 
-> The advantage of specifying the format is that it serves as a standard, unambiguous, human readable representation of teh object. This representation can be used for input and output and in persistent human-readable data objects (e.g. CSV, JSON, etc.).
+> The advantage of specifying the format is that it serves as a standard, unambiguous, human readable representation of the object. This representation can be used for input and output and in persistent human-readable data objects (e.g. CSV, JSON, etc.).
 
 #### Pro-Tip: Construct instances from `toString` values
 
