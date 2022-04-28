@@ -4,7 +4,11 @@
 
 > Whenever you implement a value class that has a sensible ordering, you should have the class implement the `Comparable` interface so that its instances can be easily sorted, searched, and used in comparison-based collections. When comparing field values in the implementations of the `compareTo` methods, avoid the use of the `<` and `>` operators. Instead, use the static `compare` methods in the boxed primitive classes or the comparator construction methods in the `Comparator` interface.
 
+## Rationale
+
 By implementing `Comparable` you allow your class to interoperate with all of the many generic algorithms and collection implementations that depend on this interface.
+
+Classes that depend on comparison include the sorted collections `TreeSet` and `TreeMap` and the utility classes `Collections` and `Arrays` which contain searching and sorting algorithms.
 
 Virtually all of the value classes in the Java platform libraries, as well as the enum types (Item 34) implement `Comparable`. If you are writing a value class with an obvious natural ordering, such as alphabetical order, numerical order, or chronological order, you should implement the `Comparable interface:
 
@@ -14,13 +18,11 @@ public interface Comparable<T>{
 }
 ```
 
-## NOTES (WIP)
-
-Classes that depend on comparison include the sorted collections `TreeSet` and `TreeMap` and the utility classes `Collections` and `Arrays` which contain searching and sorting algorithms.
-
 ## `Comparable` - Contract Definition
 
 >Returns a negative integer, zero, or a positive integer as this object is less than, equal to, or greater than the specified object. Throws `ClassCastException` if the specified object's type prevents it from being compared to this object.
+
+Comparable is an interface defining a strategy of comparing an object with other objects of the same type. This is called the class's “natural ordering.”
 
 ### Comparable Properties
 
@@ -44,13 +46,17 @@ Classes that depend on comparison include the sorted collections `TreeSet` and `
 
 ## `compareTo` and `equals`
 
-Unlike the `equals` method, which imposes a global equivalence relation on all objects, `compareTo` doesn't have to work across objects of different types: when confronted with objects of different types, `compareTo` is permitted to throw `ClassCastException`. Usually, that's exactly what it does.
+### Similarities
 
-Writing a `compareTo` method is similar to writing an `equals` method, but there are a few key differences. Because the `Comparable` interface is parameterized, the `compareTo` method is statically typed, so you don't need to type check or cast its argument. If the argument is of the wrong type, the invocation won't even compile. If the argument is `null`, the invocation should through a NullPointerException.
-
-Once consequence of these three provisions is that the equality test imposed by a `compareTo` method must obey the same restrictions imposed by the `equals` contract: reflexivity, symmetry, and transitivity. Therefore, the same caveat applies: there is no way to extend an instantiable class with a new value component while preserving the `compareTo` contract, unless you are willing to forgo the benefits of object-oriented abstraction (Item 10).
+Once consequence of these Comparison provisions is that the equality test imposed by a `compareTo` method must obey the same restrictions imposed by the `equals` contract: reflexivity, symmetry, and transitivity. Therefore, the same caveat applies: there is no way to extend an instantiable class with a new value component while preserving the `compareTo` contract, unless you are willing to forgo the benefits of object-oriented abstraction (Item 10).
 
 The same workaround applies, too If you want to add a value component to a class that implements `Comparable`, don't extend it: write an unrelated class containing an instance of the first class. Then provided a "view" method that returns the contained instance.
+
+### Differences
+
+Because the `Comparable` interface is parameterized, the `compareTo` method is statically typed, so you don't need to type check or cast its argument. If the argument is of the wrong type, the invocation won't even compile. If the argument is `null`, the invocation should throw a `NullPointerException`.
+
+Unlike the `equals` method, which imposes a global equivalence relation on all objects, `compareTo` doesn't have to work across objects of different types: when confronted with objects of different types, `compareTo` is permitted to throw `ClassCastException`. Usually, that's exactly what it does.
 
 ## Writing a good `compareTo` method
 
@@ -64,6 +70,52 @@ If a class has multiple significant fields, start with the most significant fiel
 If using the `Comparator` interface, be mindful that its advantage (the use of _comparator construction methods_, which enable a fluent interface) comes as a modest performance cost (for sorting arrays they generate).
 
 ## What is a `Comparator`?
+
+The Comparator interface defines a `compare(arg1, arg2)` method with two arguments that represent compared objects, and works similarly to the Comparable.compareTo() method.
+
+```java
+public class PlayerRankingComparator implements Comparator<Player> {
+    @Override
+    public int compare(Player firstPlayer, Player secondPlayer) {
+       return Integer.compare(firstPlayer.getRanking(), secondPlayer.getRanking());
+    }
+}
+```
+
+Note how this would be similar to the `Comparable` interface, but the method on `Comparable` takes a single argument:
+
+```java
+public class Player implements Comparable<Player> {
+    
+    //...
+
+    @Override
+    public int compareTo(Player otherPlayer) {
+        return Integer.compare(getRanking(), otherPlayer.getRanking());
+    }
+}
+```
+
+Comparators can be passed into other sorting methods if the default (natural) ordering is not preferred:
+
+```java
+PlayerRankingComparator playerComparator = new PlayerRankingComparator();
+Collections.sort(footballTeam, playerComparator);
+```
+
+## `Comparator` vs `Comparable`
+
+(Reference: [Baeldung](https://www.baeldung.com/java-comparator-comparable#comparator-vs-comparable))
+
+The Comparable interface is a good choice to use for defining the default ordering, or in other words, if it's the main way of comparing objects.
+
+So why use a Comparator if we already have Comparable?
+
+There are several reasons why:
+
+- Sometimes we can't modify the source code of the class whose objects we want to sort, thus making the use of Comparable impossible
+- Using Comparators allows us to avoid adding additional code to our domain classes
+- We can define multiple different comparison strategies, which isn't possible when using Comparable
 
 ## Navigation
 
