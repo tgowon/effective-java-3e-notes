@@ -18,15 +18,15 @@ I'm currently reading an item a (work) day.
 - [Item 6: Avoid creating unnecessary objects](items/item-06-avoid-creating-unnecessary-objects.md)
 - [Item 7: Eliminate obsolete object references](items/item-07-eliminate-obsolete-object-references.md)
 - [Item 8: Avoid finalizers and cleaners](items/item-08-avoid-finalizers-and-cleaners.md)
-- [Item 9: Prefer try-with-resources to try-finally](items/item-09-prefer-try-with-resources-to-try-finally.md)
+- [Item 9: Prefer `try`-with-resources to `try`-`finally`](items/item-09-prefer-try-with-resources-to-try-finally.md)
 
 ### Methods Common to All Objects
 
 - [Item 10: Obey the general contract when overriding `equals`](items/item-10-obey-the-general-contract-when-overriding-equals.md)
 - [Item 11: Always override `hashCode` when you override `equals`](items/item-11-always-override-hashcode-when-you-override-equals.md)
 - [Item 12: Always override `toString`](items/item-12-always-override-tostring.md)
-- [Item 13: Override clone judiciously](items/item-13-override-clone-judiciously.md)
-- Item 14: Consider implementing Comparable
+- [Item 13: Override `clone` judiciously](items/item-13-override-clone-judiciously.md)
+- [Item 14: Consider implementing `Comparable`](items/item-14-consider-implementing-comparable.md)
 
 ### Classes and Interfaces
 

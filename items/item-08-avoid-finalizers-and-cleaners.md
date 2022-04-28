@@ -37,10 +37,10 @@ import java.lang.ref.Cleaner;
 public class CleanerTest {
    public static void main(String args[]) {
       System.out.println("TutorialsPoint");
-      **Cleaner** cleaner = **Cleaner.create()**;
+      Cleaner cleaner = Cleaner.create();
       if(true) {
          CleanerTest myObject = new CleanerTest();
-            cleaner.**register**(myObject, new **State()**);    **// register cleaner**
+            cleaner.register(myObject, new State());    // register cleaner
       }
       for(int i = 1; i <= 10000; i++) {
          String[] largeObject = new String[1000];

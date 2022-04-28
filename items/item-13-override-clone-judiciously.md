@@ -105,4 +105,4 @@ Copy Constructors/Factories (like the example above) with single-interface argum
 
 - [All Items](../README.md#items)
 - [Previous](./item-12-always-override-tostring.md)
-- [Next]()
+- [Next](./item-14-consider-implementing-comparable.md)
