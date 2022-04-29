@@ -121,4 +121,4 @@ There are several reasons why:
 
 - [All Items](../README.md#items)
 - [Previous](./item-13-override-clone-judiciously.md)
-- [Next](./item-14-consider-implementing-comparable.md)
+- [Next](./item-15-minimize-the-accessibility-of-classes-and-members.md)
