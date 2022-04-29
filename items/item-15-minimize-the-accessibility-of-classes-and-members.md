@@ -14,7 +14,7 @@
 
 - Components communicate only through their APIs and are oblivious to each others' inner workings
 - Components are decoupled, allowing them to be developed, tested, optimized, used, understood, and modified in isolation.
-- Increases software reuse bbecause components that aren't tightly coupled often prove useful in other contexts besides the ones for which they were developed.
+- Increases software reuse because components that aren't tightly coupled often prove useful in other contexts besides the ones for which they were developed.
 - Decreases the risk in building large systems because individual components may prove successful even in the system does not.
 
 ## Minimize Data Accessibility By Making Each Class or Member as Inaccessible as Possible
@@ -30,7 +30,7 @@ Use the lowest possible access level consistent with the proper functioning of t
 
 ### Overriding methods, and their Access Levels
 
-If a method overrides a superclass method, it cannot have a more restrictive access level in the sublcass than in the superclass. This is necessary to ensure that an instance of the subclass is usable anywhere that an instance of the superclass is usable.
+If a method overrides a superclass method, it cannot have a more restrictive access level in the subclass than in the superclass. This is necessary to ensure that an instance of the subclass is usable anywhere that an instance of the superclass is usable.
 
 **If you violate this rule** the compile will generate an error message when you try to compile the subclass (unless the class implements an interface: all public/ methods in an interface must be declared public in the class).
 
