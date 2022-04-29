@@ -48,9 +48,9 @@ Comparable is an interface defining a strategy of comparing an object with other
 
 ### Similarities
 
-Once consequence of these Comparison provisions is that the equality test imposed by a `compareTo` method must obey the same restrictions imposed by the `equals` contract: reflexivity, symmetry, and transitivity. Therefore, the same caveat applies: there is no way to extend an instantiable class with a new value component while preserving the `compareTo` contract, unless you are willing to forgo the benefits of object-oriented abstraction (Item 10).
+Once consequence of these Comparison provisions is that the equality test imposed by a `compareTo` method must obey the same restrictions imposed by the `equals` contract: **reflexivity, symmetry, and transitivity.** Therefore, the same caveat applies: **there is no way to extend an instantiable class with a new value component while preserving the `compareTo` contract, unless you are willing to forgo the benefits of object-oriented abstraction** (Item 10).
 
-The same workaround applies, too If you want to add a value component to a class that implements `Comparable`, don't extend it: write an unrelated class containing an instance of the first class. Then provided a "view" method that returns the contained instance.
+The same workaround applies, too. If you want to add a value component to a class that implements `Comparable`, don't extend it: write an unrelated class containing an instance of the first class. Then provided a "view" method that returns the contained instance.
 
 ### Differences
 
