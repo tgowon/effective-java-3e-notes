@@ -90,4 +90,4 @@ As of JDK 9, the Java Module System can be used to group packages together by th
 
 - [All Items](../README.md#items)
 - [Previous](./item-14-consider-implementing-comparable)
-- [Next](./item-15-minimize-the-accessibility-of-classes-and-members.md)
+- [Next](./item-16-in-public-classes-use-accessor-methods-not-public-fields.md)

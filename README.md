@@ -31,7 +31,7 @@ I'm currently reading an item a (work) day.
 ### Classes and Interfaces
 
 - [Item 15: Minimize the accessibility of classes and members](items/item-15-minimize-the-accessibility-of-classes-and-members.md)
-- Item 16: In public classes, use accessor methods, not public fields
+- [Item 16: In public classes, use accessor methods, not public fields](items/item-16-in-public-classes-use-accessor-methods-not-public-fields.md)
 - Item 17: Minimize mutability
 - Item 18: Favor composition over inheritance
 - Item 19: Design and document for inheritance or else prohibit it
