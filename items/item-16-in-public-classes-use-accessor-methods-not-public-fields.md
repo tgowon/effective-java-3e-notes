@@ -57,4 +57,4 @@ public final class Time {
 
 - [All Items](../README.md#items)
 - [Previous](./item-15-minimize-the-accessibility-of-classes-and-members.md)
-- [Next](./item-16-in-public-classes-use-accessor-methods-not-public-fields.md)
+- [Next](./item-17-minimize-mutability.md)
