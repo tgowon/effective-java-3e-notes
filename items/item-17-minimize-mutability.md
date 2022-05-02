@@ -24,7 +24,7 @@ An immutable class is a class whose instances cannot be modified. All of the inf
 
 :warning: Add code here
 
-The Functional Approach: create and return a new value instance rather than modify the original instance. methods return the result of applying a function to their operand, without modifying it. 
+The Functional Approach: create and return a new value instance rather than modify the original instance. methods return the result of applying a function to their operand, without modifying it.
 
 Contrast to the procedural or imperative approach which methods apply a procedure to their operand, causing its state to change.
 
@@ -40,7 +40,7 @@ A consequence of the fact that immutable objects can be shared freely is that yo
 
 Not only can you share immutable objects, but they can share their internals.
 
-Immutable objects make great building blocks for other objects, whether mutable or immutable. 
+Immutable objects make great building blocks for other objects, whether mutable or immutable.
 
 Immutable objects provide failure atomicity for free. Their state never chagnes, so there is no possibility of a temporary inconsistency.
 
