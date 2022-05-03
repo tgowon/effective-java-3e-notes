@@ -60,4 +60,4 @@ Does the class you contemplate extending have any flaws in its API? If so, are y
 
 - [All Items](../README.md#items)
 - [Previous](./item-17-minimize-mutability.md)
-- [Next](./item-18-favor-composition-over-inheritance.md)
+- [Next](item-19-design-and-document-for-inheritance-or-else-prohibit-it.md)
