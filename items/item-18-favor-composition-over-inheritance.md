@@ -16,7 +16,7 @@ It is not a good idea to think it is safe to extend a class if you merely add ne
 
 A superclass may take on new methods that expose the subclass to unintended security holes, as the client can bypass the subclass's checks by using methods on the superclass.
 
-If the superclass acquires a new method with the same signature and a different return type, your subclass wil no longer compile. If you've given the subclass a method with the same signature and return type as the new superclass method, then you're now overriding it, and are subject to the problems described earlier. 
+If the superclass acquires a new method with the same signature and a different return type, your subclass wil no longer compile. If you've given the subclass a method with the same signature and return type as the new superclass method, then you're now overriding it, and are subject to the problems described earlier.
 
 Futhermore, it is doubtful that your method will fulfill the contract of the new superclass method, because that contract had not yet been written when you wrote the subclass method.
 
