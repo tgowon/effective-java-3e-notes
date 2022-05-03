@@ -10,7 +10,7 @@ By implementing `Comparable` you allow your class to interoperate with all of th
 
 Classes that depend on comparison include the sorted collections `TreeSet` and `TreeMap` and the utility classes `Collections` and `Arrays` which contain searching and sorting algorithms.
 
-Virtually all of the value classes in the Java platform libraries, as well as the enum types (Item 34) implement `Comparable`. If you are writing a value class with an obvious natural ordering, such as alphabetical order, numerical order, or chronological order, you should implement the `Comparable interface:
+Virtually all of the value classes in the Java platform libraries, as well as the enum types (Item 34) implement `Comparable`. If you are writing a value class with an obvious natural ordering, such as alphabetical order, numerical order, or chronological order, you should implement the `Comparable` interface:
 
 ```java
 public interface Comparable<T>{
