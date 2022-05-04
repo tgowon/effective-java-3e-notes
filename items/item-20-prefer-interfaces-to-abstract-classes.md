@@ -49,11 +49,12 @@ Skeletal implementation classes are called `Abstract<Interface>` where `Interfac
 
 Skeletal implementation classes provide all of the implementation assistance of abstract classes without imposing the severe constraints that abstract classes impose when they serve as type definitions.
 
-Users can choose to either extend the skeletal implementation class, or use the interface directly (and provide their own implementation of abstract methods). 
+Users can choose to either extend the skeletal implementation class, or use the interface directly (and provide their own implementation of abstract methods).
 
 Users can also forward invocations of interface methods to a contained instance of a private inner class that extends the skeletal implementation. This is known as "simulated multiple inheritance."
 
 ## Writing your API (pt 2)
+
 >:warning: migrate to the "designing your interfaces/abstract classes section"
 
 First, study the interface and decide which methods are the primitives in terms of which the others can be implemented. These primitives will be the abstract methods in your skeletal implementation. Next, provide default methods in the interface for all of the methods that can be implemented directly atop the primitives, but recall that you may not provide default methods for `Object`. If the primitives and default methods cover the interface, you're done, and have no need for a skeletal implementation class. Otherwise, write a class declared to implement the interface, with implementations of all the remaining interface methods. The class may contain any nonpublic fields and methods appropriate to the task.
