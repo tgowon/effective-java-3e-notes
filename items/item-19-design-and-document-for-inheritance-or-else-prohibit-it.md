@@ -72,4 +72,4 @@ There are two ways to prohibit subclassing. The easier of the two is to declare 
 
 - [All Items](../README.md#items)
 - [Previous](./item-18-favor-composition-over-inheritance.md)
-- [Next](./item-19-design-and-document-for-inheritance-or-else-prohibit-it.md)
+- [Next](./item-20-prefer-interfaces-to-abstract-classes.md)
