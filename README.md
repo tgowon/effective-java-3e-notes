@@ -36,7 +36,7 @@ I'm currently reading an item a (work) day.
 - [Item 18: Favor composition over inheritance](items/item-18-favor-composition-over-inheritance.md)
 - [Item 19: Design and document for inheritance or else prohibit it](items/item-19-design-and-document-for-inheritance-or-else-prohibit-it.md)
 - [Item 20: Prefer interfaces to abstract classes](items/item-20-prefer-interfaces-to-abstract-classes.md)
-- Item 21: Design interfaces for posterity
+- [Item 21: Design interfaces for posterity](items/item-21-design-interfaces-for-posterity.md)
 - Item 22: Use interfaces only to define types
 - Item 23: Prefer class hierarchies to tagged classes
 - Item 24: Favor static member classes over nonstatic
