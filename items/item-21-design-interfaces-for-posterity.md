@@ -30,4 +30,4 @@ At minimum, you should aim for three diverse implementations. Write multiple cli
 
 - [All Items](../README.md#items)
 - [Previous](./item-20-prefer-interfaces-to-abstract-classes.md)
-- [Next](./item-21-design-interfaces-for-posterity.md)
+- [Next](./item-22-use-interfaces-only-to-define-types.md)
