@@ -43,4 +43,4 @@ public class Test{
 
 - [All Items](../README.md#items)
 - [Previous](./item-21-design-interfaces-for-posterity.md)
-- [Next](./item-22-use-interfaces-only-to-define-types.md)
+- [Next](./item-23-prefer-class-hierarchies-to-tagged-classes.md)

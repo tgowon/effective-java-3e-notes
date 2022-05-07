@@ -38,7 +38,7 @@ I'm currently reading an item a (work) day.
 - [Item 20: Prefer interfaces to abstract classes](items/item-20-prefer-interfaces-to-abstract-classes.md)
 - [Item 21: Design interfaces for posterity](items/item-21-design-interfaces-for-posterity.md)
 - [Item 22: Use interfaces only to define types](items/item-22-use-interfaces-only-to-define-types.md)
-- Item 23: Prefer class hierarchies to tagged classes
+- [Item 23: Prefer class hierarchies to tagged classes](items/item-23-prefer-class-hierarchies-to-tagged-classes.md)
 - Item 24: Favor static member classes over nonstatic
 - Item 25: Limit source files to a single top-level class
 
