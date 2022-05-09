@@ -40,4 +40,4 @@ Local classes can be declared practically anywhere a local variable can be decla
 
 - [All Items](../README.md#items)
 - [Previous](./item-23-prefer-class-hierarchies-to-tagged-classes.md)
-- [Next](./item-24-favor-static-member-classes-over-nonstatic.md)
+- [Next](./item-25-limit-source-files-to-a-single-top-level-class.md)
