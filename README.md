@@ -44,7 +44,7 @@ I'm currently reading an item a (work) day.
 
 ### Generics
 
-- Item 26: Don’t use raw types
+- [Item 26: Don’t use raw types](items/item-26-dont-use-raw-types.md)
 - Item 27: Eliminate unchecked warnings
 - Item 28: Prefer lists to arrays
 - Item 29: Favor generic types

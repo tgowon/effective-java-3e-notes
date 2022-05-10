@@ -18,4 +18,4 @@ _Self-explanatory._ If classes are truly independent, there is no need to have t
 
 - [All Items](../README.md#items)
 - [Previous](./item-24-favor-static-member-classes-over-nonstatic.md)
-- [Next](./item-25-limit-source-files-to-a-single-top-level-class.md)
+- [Next](./item-26-dont-use-raw-types.md)
