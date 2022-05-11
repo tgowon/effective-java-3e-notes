@@ -94,4 +94,4 @@ if(o instanceof Set){       // Raw type
 
 - [All Items](../README.md#items)
 - [Previous](./item-25-limit-source-files-to-a-single-top-level-class.md)
-- [Next](./item-26-dont-use-raw-types.md)
+- [Next](./item-27-eliminate-unchecked-warnings.md)
