@@ -42,7 +42,7 @@ A non-reifiable type is one whose runtime representation contains less informati
 
 Generics (`E`, `List<E>` and `List<String>` are non-reifiable.
 
-### Type Erasure
+#### Type Erasure
 
 Type erasure means that type constraints are only enforced at compile time, and are discarded (erased) at runtime.
 
