@@ -46,7 +46,7 @@ I'm currently reading an item a (work) day.
 
 - [Item 26: Don’t use raw types](items/item-26-dont-use-raw-types.md)
 - [Item 27: Eliminate unchecked warnings](items/item-27-eliminate-unchecked-warnings.md)
-- Item 28: Prefer lists to arrays
+- [Item 28: Prefer lists to arrays](items/item-28-prefer-lists-to-arrays.md)
 - Item 29: Favor generic types
 - Item 30: Favor generic methods
 - Item 31: Use bounded wildcards to increase API flexibility

@@ -24,4 +24,4 @@ If you ignore unchecked warnings that you know to be safe (instead of suppressin
 
 - [All Items](../README.md#items)
 - [Previous](./item-26-dont-use-raw-types.md)
-- [Next](./item-27-eliminate-unchecked-warnings.md)
+- [Next](./item-28-prefer-lists-to-arrays.md)
