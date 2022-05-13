@@ -9,6 +9,7 @@
 ### Covariance (arrays) vs. Invariance (generics)
 
 #### Covariance
+
 Arrays are covariant. This means that if `Sub` is a subtype of `Super`, then the array type `Sub[]` is a subtype of the array type `Super[]`.
 
 #### Invariance
