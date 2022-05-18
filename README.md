@@ -55,7 +55,7 @@ I'm currently reading an item a (work) day.
 
 ### Enums and Annotations
 
-- Item 34: Use enums instead of int constants
+- [Item 34: Use enums instead of int constants](items/item-34-use-enums-instead-of-constants.md)
 - Item 35: Use instance fields instead of ordinals
 - Item 36: Use EnumSet instead of bit fields
 - Item 37: Use EnumMap instead of ordinal indexing
