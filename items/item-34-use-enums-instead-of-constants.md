@@ -61,4 +61,4 @@ There is no easy way to translate `int` enum constants into printable strings.
 
 - [All Items](../README.md#items)
 - [Previous](./item-33-consider-typesafe-heterogeneous-containers.md)
-- [Next](./item-34-use-enums-instead-of-constants.md)
+- [Next](./item-35-use-instance-fields-instead-of-ordinals.md)
