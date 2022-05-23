@@ -32,4 +32,4 @@ public enum Ensemble{
 
 - [All Items](../README.md#items)
 - [Previous](./item-34-use-enums-instead-of-constants.md)
-- [Next](./item-35-use-instance-fields-instead-of-ordinals.md)
+- [Next](./item-36-use-enumset-instead-of-bit-fields.md)

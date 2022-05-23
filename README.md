@@ -57,11 +57,11 @@ I'm currently reading an item a (work) day.
 
 - [Item 34: Use enums instead of int constants](items/item-34-use-enums-instead-of-constants.md)
 - [Item 35: Use instance fields instead of ordinals](items/item-35-use-instance-fields-instead-of-ordinals.md)
-- Item 36: Use EnumSet instead of bit fields
-- Item 37: Use EnumMap instead of ordinal indexing
-- Item 38: Emulate extensible enums with interfaces
-- Item 39: Prefer annotations to naming patterns
-- Item 40: Consistently use the Override annotation
+- [Item 36: Use `EnumSet` instead of bit fields](items/item-36-use-enumset-instead-of-bit-fields.md)
+- [Item 37: Use `EnumMap` instead of ordinal indexing](items/item-37-use-enummap-instaed-of-ordinal-indexing.md)
+- [Item 38: Emulate extensible enums with interfaces](items/item-38-emulate-extensible-enums-with-interfaces.md)
+- [Item 39: Prefer annotations to naming patterns](items/item-39-prefer-annotations-to-naming-patterns.md)
+- Item 40: Consistently use the `Override` annotation
 - Item 41: Use marker interfaces to define types
 
 ### Lambdas and Streams
@@ -71,7 +71,7 @@ I'm currently reading an item a (work) day.
 - Item 44: Favor the use of standard functional interfaces
 - Item 45: Use streams judiciously
 - Item 46: Prefer side-effect-free functions in streams
-- Item 47: Prefer Collection to Stream as a return type
+- Item 47: Prefer `Collection` to `Stream` as a return type
 - Item 48: Use caution when making streams parallel
 
 ### Methods
