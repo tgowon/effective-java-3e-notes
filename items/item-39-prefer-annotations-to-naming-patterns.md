@@ -10,7 +10,6 @@
 2. There is no way to ensure that they are used only on appropriate program elements.
 3. They provide no good way to associate parameter values with program elements.
 
-
 ## Annotations - Primer
 
 ### Meta-Annotations
@@ -41,7 +40,7 @@ As of Java 8, you can annotate the declaration of an annotation with the @Repeat
 
 To detect repeated and non-repeated annotations with `isAnnotationPresent`, you must check for both the annotation type and its containing annotation type.
 
-Repeatable annotations were added to improve the readability of source code that logically applies multiple instances of the same annotation type to a given program element. If you feel they enhance the readability of your source code, use them, but remember that there is more boilerplate in declaring and processing repeatable annotations, and that processing repeatable annotations is error-prone. 
+Repeatable annotations were added to improve the readability of source code that logically applies multiple instances of the same annotation type to a given program element. If you feel they enhance the readability of your source code, use them, but remember that there is more boilerplate in declaring and processing repeatable annotations, and that processing repeatable annotations is error-prone.
 
 (WIP: add example code here)
 
