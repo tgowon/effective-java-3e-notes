@@ -19,5 +19,5 @@ A minor disadvantage of the use of interfaces to emulate extensible enums is tha
 ## Navigation
 
 - [All Items](../README.md#items)
-- [Previous](./item-37-use-enummap-instaed-of-ordinal-indexing.md)
-- [Next](./item-38-emulate-extensible-enums-with-interfaces.md)
+- [Previous](./item-37-use-enummap-instead-of-ordinal-indexing.md)
+- [Next](./item-39-prefer-annotations-to-naming-patterns.md)

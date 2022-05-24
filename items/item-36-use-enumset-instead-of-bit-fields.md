@@ -50,4 +50,4 @@ This could also be used, but `HashSet` is designed as a general-purpose `Set` im
 
 - [All Items](../README.md#items)
 - [Previous](./item-35-use-instance-fields-instead-of-ordinals.md)
-- [Next](./item-37-use-enummap-instaed-of-ordinal-indexing.md)
+- [Next](./item-37-use-enummap-instead-of-ordinal-indexing.md)

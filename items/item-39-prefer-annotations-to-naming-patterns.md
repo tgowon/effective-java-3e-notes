@@ -48,4 +48,4 @@ Repeatable annotations were added to improve the readability of source code that
 
 - [All Items](../README.md#items)
 - [Previous](./item-38-emulate-extensible-enums-with-interfaces.md)
-- [Next](./item-39-prefer-annotations-to-naming-patterns.md)
+- [Next](./item-40-consistently-use-the-override-annotation.md)

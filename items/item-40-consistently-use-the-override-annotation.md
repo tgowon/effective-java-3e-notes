@@ -14,4 +14,4 @@ This includes abstract methods / interface methods (especially with the advent o
 
 - [All Items](../README.md#items)
 - [Previous](./item-39-prefer-annotations-to-naming-patterns.md)
-- [Next](./item-40-consistently-use-the-override-annotation.md)
+- [Next](./item-41-use-marker-interfaces-to-define-types.md)

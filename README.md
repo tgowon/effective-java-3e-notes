@@ -58,11 +58,11 @@ I'm currently reading an item a (work) day.
 - [Item 34: Use enums instead of int constants](items/item-34-use-enums-instead-of-constants.md)
 - [Item 35: Use instance fields instead of ordinals](items/item-35-use-instance-fields-instead-of-ordinals.md)
 - [Item 36: Use `EnumSet` instead of bit fields](items/item-36-use-enumset-instead-of-bit-fields.md)
-- [Item 37: Use `EnumMap` instead of ordinal indexing](items/item-37-use-enummap-instaed-of-ordinal-indexing.md)
+- [Item 37: Use `EnumMap` instead of ordinal indexing](items/item-37-use-enummap-instead-of-ordinal-indexing.md)
 - [Item 38: Emulate extensible enums with interfaces](items/item-38-emulate-extensible-enums-with-interfaces.md)
 - [Item 39: Prefer annotations to naming patterns](items/item-39-prefer-annotations-to-naming-patterns.md)
 - [Item 40: Consistently use the `Override` annotation](items/item-40-consistently-use-the-override-annotation.md)
-- Item 41: Use marker interfaces to define types
+- [Item 41: Use marker interfaces to define types](items/item-41-use-marker-interfaces-to-define-types.md)
 
 ### Lambdas and Streams
 
