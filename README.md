@@ -61,7 +61,7 @@ I'm currently reading an item a (work) day.
 - [Item 37: Use `EnumMap` instead of ordinal indexing](items/item-37-use-enummap-instaed-of-ordinal-indexing.md)
 - [Item 38: Emulate extensible enums with interfaces](items/item-38-emulate-extensible-enums-with-interfaces.md)
 - [Item 39: Prefer annotations to naming patterns](items/item-39-prefer-annotations-to-naming-patterns.md)
-- Item 40: Consistently use the `Override` annotation
+- [Item 40: Consistently use the `Override` annotation](items/item-40-consistently-use-the-override-annotation.md)
 - Item 41: Use marker interfaces to define types
 
 ### Lambdas and Streams
