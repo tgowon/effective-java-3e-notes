@@ -66,7 +66,7 @@ I'm currently reading an item a (work) day.
 
 ### Lambdas and Streams
 
-- Item 42: Prefer lambdas to anonymous classes
+- [Item 42: Prefer lambdas to anonymous classes](items/item-42-prefer-lambdas-to-anonymous-classes.md)
 - Item 43: Prefer method references to lambdas
 - Item 44: Favor the use of standard functional interfaces
 - Item 45: Use streams judiciously

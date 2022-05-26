@@ -29,4 +29,4 @@ A _marker interface_ is an interface that contains no method declarations but me
 
 - [All Items](../README.md#items)
 - [Previous](./item-40-consistently-use-the-override-annotation.md)
-- [Next](./item-41-use-marker-interfaces-to-define-types.md)
+- [Next](./item-42-prefer-lambdas-to-anonymous-classes.md)
